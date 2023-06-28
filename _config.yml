@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Lauren Wilkins"
+title                    : "About"
 title_separator          : "-"
 name                     : &name "Lauren Wilkins"
 description              : &description "Lab Manager at the Crockett Lab"
@@ -82,18 +82,13 @@ analytics:
 author:
   name             : "Lauren Wilkins"
   avatar           : "headshot.jpeg"
-  bio              : "Lab Manager at the Crockett Lab"
+  bio              : "Lab Manager"
   location         : "Princeton, NJ"
-  employer         : "http://www.crockettlab.org"
-  pubmed           :
+  employer         :
+
   googlescholar    : "https://scholar.google.com/citations?hl=en&authuser=1&user=biqP5bMAAAAJ"
-  email            : "mailto:lw5701@princeton.edu
-  researchgate     : 
-  facebook         : 
-  github           : "ljwilkins"
-  instagram        :
-  linkedin         :
-  orcid            :
+  email            : "lw5701@princeton.edu"
+  github           : "ljwilkins"¸¸¸¸¸¸¸¸¸
   twitter          : "_laurenwilkins_"
 
 
@@ -171,10 +166,21 @@ collections:
 
 # Defaults
 defaults:
-  # _about
+  # _posts
   - scope:
       path: ""
-      type: about
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
@@ -196,6 +202,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
   # _talks
   - scope:
       path: ""
@@ -215,7 +230,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
